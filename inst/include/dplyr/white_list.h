@@ -10,8 +10,7 @@ inline bool is_bare_vector( SEXP x){
     while( att != R_NilValue ){
         SEXP tag = TAG(att) ;
         if( !( tag == R_NamesSymbol || tag == Rf_install("comment") ) ) return false ;
-        if( !( tag == R_NamesSymbol || tag == Rf_install("label") ) ) return false ;
-        if( !( tag == R_NamesSymbol || tag == Rf_install("format") ) ) return false ;
+        if( true ) return false ;
         att = CDR(att) ;    
     }
     
